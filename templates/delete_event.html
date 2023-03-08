@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Event</title>
+    <link rel="stylesheet" type="text/css" href="static/delete_event.css">
+</head>
+<body>
+    <h1>Delete Event</h1>
+    <form method="POST" action="{{ url_for('delete_event') }}">
+        <label for="event_id">Event ID:</label><br>
+        <input type="text" id="event_id" name="event_id"><br><br>
+        <input type="submit" value="Delete Event">
+    </form>
+</body>
+</html>

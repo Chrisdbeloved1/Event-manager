@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Manager App</title>
+    <link rel="stylesheet" type="text/css" href="static/index.css">
+</head>
+<body>
+    <h1>Welcome to the Event Manager App</h1>
+    <ul>
+        <li><a href="{{ url_for('create_event') }}">Create Event</a></li>
+        <li><a href="{{ url_for('view_events') }}">View Events</a></li>
+        <li><a href="{{ url_for('delete_event') }}">Delete Event</a></li>
+    </ul>
+</body>
+</html>

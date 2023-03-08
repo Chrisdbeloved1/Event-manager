@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Event</title>
+    <link rel="stylesheet" type="text/css" href="static/create_event.css">
+</head>
+<body>
+    <h1>Create Event</h1>
+    <form method="POST" action="{{ url_for('create_event') }}">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title"><br>
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description"></textarea><br>
+        <label for="start_time">Start Time:</label><br>
+        <input type="datetime-local" id="start_time" name="start_time"><br>
+        <label for="end_time">End Time:</label><br>
+        <input type="datetime-local" id="end_time" name="end_time"><br><br>
+        <input type="submit" value="Create Event">
+    </form>
+</body>
+</html>
